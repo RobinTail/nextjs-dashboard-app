@@ -37,7 +37,7 @@ export function Card({
 }: {
   title: string;
   value: number | string;
-  type: 'invoices' | 'customers' | 'pending' | 'collected';
+  type: keyof typeof iconMap;
 }) {
   const Icon = iconMap[type];
 
